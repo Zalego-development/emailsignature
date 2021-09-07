@@ -1,0 +1,118 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <style type="text/css">
+      <!--
+      span.cls_003{font-family:Arial,serif;font-size:24.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+      div.cls_003{font-family:Arial,serif;font-size:24.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+      span.cls_002{font-family:Arial,serif;font-size:47.4px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+      div.cls_002{font-family:Arial,serif;font-size:47.4px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+      span.cls_004{font-family:Arial,serif;font-size:18.9px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+      div.cls_004{font-family:Arial,serif;font-size:18.9px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+      span.cls_005{font-family:Arial,serif;font-size:24.3px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+      div.cls_005{font-family:Arial,serif;font-size:24.3px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+      span.cls_006{font-family:Arial,serif;font-size:21.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+      div.cls_006{font-family:Arial,serif;font-size:21.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+      span.cls_007{font-family:Arial,serif;font-size:21.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+      div.cls_007{font-family:Arial,serif;font-size:21.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+      span.cls_009{font-family:Arial,serif;font-size:25.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+      div.cls_009{font-family:Arial,serif;font-size:25.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+      span.cls_008{font-family:Arial,serif;font-size:80.3px;color:rgb(86,149,26);font-weight:bold;font-style:normal;text-decoration: none}
+      div.cls_008{font-family:Arial,serif;font-size:80.3px;color:rgb(86,149,26);font-weight:bold;font-style:normal;text-decoration: none}
+      span.cls_010{font-family:Arial,serif;font-size:31.6px;color:rgb(86,149,26);font-weight:normal;font-style:normal;text-decoration: none}
+      div.cls_010{font-family:Arial,serif;font-size:31.6px;color:rgb(86,149,26);font-weight:normal;font-style:normal;text-decoration: none}
+      span.cls_012{font-family:Arial,serif;font-size:25.1px;color:rgb(252,88,0);font-weight:normal;font-style:normal;text-decoration: none}
+      div.cls_012{font-family:Arial,serif;font-size:25.1px;color:rgb(252,88,0);font-weight:normal;font-style:normal;text-decoration: none}
+      span.cls_011{font-family:Arial,serif;font-size:80.3px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+      div.cls_011{font-family:Arial,serif;font-size:80.3px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+      span.cls_013{font-family:Arial,serif;font-size:31.6px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+      div.cls_013{font-family:Arial,serif;font-size:31.6px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+      -->
+      </style>
+  </style>
+  </head>
+  <br><br>
+  <br>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <h3>{{the_employee.full_name}}</h3>
+
+
+      <div style="position:absolute;left:50%;margin-left:-761px;top:1110px;width:1523px;height:360px;border-style:outset;overflow:hidden">
+        
+        <div style="position:absolute;left:0px;top:0px">
+        <img src="{% static 'signature/images/background4.jpg' %}" width=1523 height=360></div>
+        <div style="position:absolute;left:635.59px;top:70.56px" class="cls_006"><span class="cls_006">+254 723 274 774 | +254 727 736 005</span></div>
+        <div style="position:absolute;left:635.59px;top:103.35px" class="cls_006"><span class="cls_006">eric@zalego.com</span></div>
+        <center><div style="position:absolute;left:118.71px;top:13.78px" class="cls_002">
+          <span class="cls_002">
+            <img src="{% static 'signature/images/dwight.jpg'%}" style="height: 120px; width:auto; border-radius:50px;">
+          </span>
+        </div></center>
+        <div style="position:absolute;left:58.71px;top:133.78px" class="cls_002"><span class="cls_002">Eric Mutuku</span></div>
+        <div style="position:absolute;left:635.59px;top:136.82px" class="cls_006"><span class="cls_006"> </span><A HREF="http://www.zalegoacademy.ac.ke/">www.zalegoacademy.ac.ke</A> </div>
+        <div style="position:absolute;left:66.57px;top:194.59px" class="cls_004"><span class="cls_004" style="color:black">CEO, Zalego and Zalda.</span></div>
+        <div style="position:absolute;left:636.55px;top:173.36px" class="cls_007"><span class="cls_007">Westlands</span></div>
+        <div style="position:absolute;left:636.55px;top:196.12px" class="cls_007"><span class="cls_007">Devan Plaza 6th Floor Crossway Road</span></div>
+        <div style="position:absolute;left:1309.55px;top:246.12px" class="cls_007">
+          <span class="cls_007">
+            <img src="{% static 'signature/images/zalego.jpg' %}" style="height:70px;width:auto">
+          </span>
+        </div>
+        </div>
+
+        <div style="position:absolute;left:50%;margin-left:-761px;top:1480px;width:1523px;height:360px;border-style:outset;overflow:hidden">
+          <div style="position:absolute;left:0px;top:0px">
+          <img src="{% static 'signature/images/background55.jpg' %}" width=1523 height=360>
+        </div>
+          <div style="position:absolute;left:849.29px;top:58.10px" class="cls_009"><span class="cls_009">+254 723 274 774 | +254 727 736 005</span></div>
+          <center><div style="position:absolute;left:118.71px;top:33.78px" class="cls_002">
+            <span class="cls_002">
+              <img src="{% static 'signature/images/dwight.jpg'%}" style="height: 120px; width:auto; border-radius:50px;">
+            </span>
+          </div></center>
+          <div style="position:absolute;left:60.27px;top:124.94px" class="cls_008"><span class="cls_008" style="font-size:52px;!important">Eric Mutuku</span></div>
+          <div style="position:absolute;left:827.91px;top:129.20px" class="cls_009"><span class="cls_009">eric@zalego.com</span></div>
+          <div style="position:absolute;left:60.27px;top:217.00px" class="cls_010"><span class="cls_010">CEO</span></div>
+          <div style="position:absolute;left:800.74px;top:196.32px" class="cls_009"><span class="cls_009" style="color:white;!important"> </span>www.zalegoacademy.ac.ke</div>
+          <div style="position:absolute;left:60.27px;top:258.52px" class="cls_010"><span class="cls_010">Zalego and Zalda</span></div>
+          <div style="position:absolute;left:776.61px;top:253.42px" class="cls_009"><span class="cls_009">Westlands</span></div>
+          <div style="position:absolute;left:776.61px;top:281.80px" class="cls_009"><span class="cls_009">Devan Plaza 6th Floor Crossway Road</span></div>
+          </div>
+    </div><!-- /.container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>
