@@ -21,3 +21,38 @@
 //   // removeRange(range) when it is supported
 //   window.getSelection().removeAllRanges();
 // });
+
+document.getElementById('templateonecopy').addEventListener('click', function() {
+
+    var node = document.getElementById('sample');
+  
+    domtoimage.toSvg(node)
+      .then(function(dataUrl) {
+      console.log(dataUrl);
+        //window.open(dataUrl);
+        var img = new Image();
+        img.src = dataUrl;
+        // document.getElementById("theimages").appendChild(img);
+      })
+      .catch(function(error) {
+        console.error('oops, something went wrong!', error);
+      });
+  
+  });
+
+  
+  document.getElementById('templateonecopy').addEventListener('click', function() {
+      let div =
+          document.getElementById('photo');
+
+      // Use the html2canvas
+      // function to take a screenshot
+      // and append it
+      // to the output div
+      html2canvas(div).then(
+          function (canvas) {
+              document
+              .getElementById('output')
+              .appendChild(canvas);
+          })
+  }
