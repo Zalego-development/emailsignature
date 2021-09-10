@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from signature.views import get_emp
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('signature.urls'))
+    path('<str:empid>', get_emp, name='getemployee')
 ]
 
