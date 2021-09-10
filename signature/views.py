@@ -73,7 +73,7 @@ def get_emp(request,empid):
             else:
                 start_code = "data:image/png;base64,"
             emp_data = {
-                'full_name' : employee['Full Name'],
+                # 'full_name' : employee['Full Name'],
                 'employee_id' : employee['Employee Id'],
                 'company' : employee['Company'],
                 'designation' : employee['Designation'],
@@ -90,11 +90,11 @@ def get_emp(request,empid):
             if employee['Company'] == 'Zalda Company':
                 companyLogo = "https://github.com/Zalego-development/CompanyLogos/blob/main/zaldacropped.png?raw=true"
                 website = "www.zalda.com"
-                location= "Devan Plaza, 3rd Floor Crossway, Westlands Nairobi."
+                location= "Devan Plaza, Westlands Nairobi."
             elif employee['Company'] == 'Zalego Academy':
                 companyLogo = "https://github.com/Zalego-development/CompanyLogos/blob/main/zalegocropped.png?raw=true"
                 website = "https://www.zalegoacademy.ac.ke"
-                location= "Devan Plaza, 3rd Floor Crossway, Westlands Nairobi."
+                location= "Devan Plaza, Westlands Nairobi."
             elif employee['Company'] == 'DAPROIM AFRICA LIMITED' or employee['Company'] == 'StepWise':
                 companyLogo = "https://github.com/Zalego-development/CompanyLogos/blob/main/stepwisecropped.png?raw=true"
                 website = "https://stepwise.net"
@@ -107,8 +107,9 @@ def get_emp(request,empid):
             else:
                 photo = employee['photo']
                 
-            print(employee['photo'][-9:])
-            context = {'employee': emp_data, 'companyLogo':companyLogo, 'website':website, 'photo':photo, 'location':location}
+            emp_name = employee['Full Name'].split(' ')
+            full_name = emp_name[0] + ' ' + emp_name[1]
+            context = {'employee': emp_data, 'companyLogo':companyLogo, 'website':website, 'photo':photo, 'location':location, 'full_name':full_name}
             # context = {'employee': emp_data}
     
     return render(request, 'signature/index.html',context)
