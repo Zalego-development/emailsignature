@@ -90,12 +90,15 @@ def get_emp(request,empid):
             if employee['Company'] == 'Zalda Company':
                 companyLogo = "https://github.com/Zalego-development/CompanyLogos/blob/main/zaldacropped.png?raw=true"
                 website = "www.zalda.com"
+                location= "Devan Plaza, 3rd Floor Crossway, Westlands Nairobi."
             elif employee['Company'] == 'Zalego Academy':
                 companyLogo = "https://github.com/Zalego-development/CompanyLogos/blob/main/zalegocropped.png?raw=true"
-                website = "www.zalegoacademy.ac.ke"
+                website = "https://www.zalegoacademy.ac.ke"
+                location= "Devan Plaza, 3rd Floor Crossway, Westlands Nairobi."
             elif employee['Company'] == 'DAPROIM AFRICA LIMITED' or employee['Company'] == 'StepWise':
                 companyLogo = "https://github.com/Zalego-development/CompanyLogos/blob/main/stepwisecropped.png?raw=true"
-                website = "stepwise.net"
+                website = "https://stepwise.net"
+                location = "701 Brazos St., Austin, TX 78701"
             elif employee['Company'] == 'NEXT STEP FOUNDATION':
                 companyLogo = "https://github.com/Zalego-development/CompanyLogos/blob/main/nextcropped.png?raw=true"
 
@@ -105,7 +108,7 @@ def get_emp(request,empid):
                 photo = employee['photo']
                 
             print(employee['photo'][-9:])
-            context = {'employee': emp_data, 'companyLogo':companyLogo, 'website':website, 'photo':photo}
+            context = {'employee': emp_data, 'companyLogo':companyLogo, 'website':website, 'photo':photo, 'location':location}
             # context = {'employee': emp_data}
     
     return render(request, 'signature/index.html',context)
